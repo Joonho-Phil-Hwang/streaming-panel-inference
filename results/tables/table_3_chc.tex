@@ -1,0 +1,29 @@
+\begin{table}[H]
+\centering
+\caption{Community Health Center estimates and county-clustered standard errors}
+\label{tab:chc-estimates}
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.31\textwidth}lrrrrr@{}}
+\toprule
+Specification & Event years & Estimate & CR0 SE & CR2 SE & Approx. inc. & Approx. dec. \\
+\midrule
+\multicolumn{7}{l}{\textit{Panel A. Saturated ETWFE}}\\
+Main ETWFE & 0--4 & $-88.773$ & 9.925 & 10.795 & 10.795 & 10.795 \\
+ & 5--9 & $-127.925$ & 14.245 & 15.125 & 15.125 & 15.125 \\
+ & 10--14 & $-104.850$ & 17.541 & 18.558 & 18.549 & 18.545 \\
+\addlinespace
+\multicolumn{7}{l}{\textit{Panel B. Completed-sample comparisons}}\\
+ETWFE + Bailey--Goodman-Bacon controls/effects & 0--4 & $-57.338$ & 8.964 & 10.409 & --- & --- \\
+ & 5--9 & $-98.258$ & 17.428 & 20.348 & --- & --- \\
+ & 10--14 & $-83.403$ & 22.886 & 26.553 & --- & --- \\
+Pooled model (our R replication) & 0--4 & $-41.098$ & 9.473 & 10.441 & --- & --- \\
+ & 5--9 & $-71.959$ & 14.657 & 16.416 & --- & --- \\
+ & 10--14 & $-64.080$ & 19.093 & 21.301 & --- & --- \\
+\bottomrule
+\end{tabular}
+\begin{minipage}{0.96\textwidth}
+\footnotesize\setstretch{1.0}\raggedright
+\textit{Notes:} Estimates are in deaths per 100,000 residents aged 50 and older. CR0 and CR2 use all county scores re-evaluated on the completed sample; the last two columns use corrected scores stored under each processing order. CR2 and the stored-score correction use working variance $\sigma^2w_i^{-1}\b I_{T_i}$, with no scalar degrees-of-freedom adjustment. County/observation counts are 2,541/76,230 for Panel A, 2,539/76,170 for adjusted ETWFE, and 3,043/91,290 for the pooled model. Adjusted ETWFE adds the published controls and interacted effects to the post-treatment cohort-year specification. The pooled model reproduces \citet[Table 2, Panel B, column 2]{baileyGoodmanBacon2015} within 0.002 for point estimates; covariance conventions may differ.
+\end{minipage}
+\end{table}

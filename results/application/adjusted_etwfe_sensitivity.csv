@@ -1,0 +1,4 @@
+specification,window,estimate,standard_error_cr0,ci_low_cr0,ci_high_cr0
+ETWFE + Bailey--Goodman-Bacon controls/effects,0--4,-57.3376907902899,8.96370833114612,-74.9065591193363,-39.7688224612435
+ETWFE + Bailey--Goodman-Bacon controls/effects,5--9,-98.2576676162635,17.4284502386648,-132.417430084047,-64.0979051484804
+ETWFE + Bailey--Goodman-Bacon controls/effects,10--14,-83.4027416356155,22.8856571412916,-128.258629632547,-38.5468536386839

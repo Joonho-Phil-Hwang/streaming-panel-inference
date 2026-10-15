@@ -1,0 +1,7 @@
+list(repetitions = 2000L, N_grid = c(100L, 200L, 400L, 800L, 
+1600L, 3200L), N0 = 50L, master_seed = 20260903L, RNG = c("Mersenne-Twister", 
+"Inversion", "Rejection"), source_md5 = c(simulation.R = "b85b030867b47455ddf80b9b7e93471f", 
+numerics.cpp = "19bd254f295119d9d5af5bfd65b8291f"), generator_max_N = 3200L, 
+    uncorrected_opening_refresh = TRUE, elapsed_seconds = 247.911, 
+    workers = 4L, R_version = "R version 4.5.2 (2025-10-31)", 
+    platform = "aarch64-apple-darwin20")

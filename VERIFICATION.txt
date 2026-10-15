@@ -1,0 +1,78 @@
+REPLICATION PACKAGE VERIFICATION
+Date: October 15, 2026
+Paper: Fixed-Effects Estimation and Cluster-Robust Inference for Streaming Panel Data
+Authors: Joonho Hwang and Seojeong Lee
+Manuscript reference: main8, October 15, 2026 revision
+
+DELIVERY
+One entry point and three analysis/kernel files; four code files in total.
+The folder includes original input data, source documentation, saved production
+results, all three tables and figures, and file checksums. No working manuscript,
+local R library, build scripts, compiled objects, or development backups are included.
+
+FULL RECONSTRUCTION
+Command: Rscript replicate.R --workers=4
+R 4.5.2; macOS; Apple Silicon; single BLAS/OpenMP thread; four Monte Carlo workers.
+Analysis runtime: 412.0 seconds (6.87 minutes), excluding initial C++ compilation.
+All computations were rerun from generated simulation data and the original CHC file.
+Baseline: 2,000 replications, each evaluated at six N values and three endpoints.
+Few treated: 2,000 replications for each G = 4, 8, 16; 6,000 total.
+CHC: original-data sample construction, both annual replay orders, full-sample
+CR0/CR2 references, adjusted ETWFE and pooled comparisons, and reporting outputs.
+No failed or discarded Monte Carlo replications.
+
+NUMERICAL CHECKS
+44 baseline checks, including independent scalar-R/C++ comparisons, plm,
+clubSandwich, exact-update paths, correction formulas, and order invariance.
+153 few-treated checks on nine native-R panels: design counts, every-arrival
+batch identities and observation-space scores, plm/clubSandwich references
+at initialization and completion, and reversed-order exact estimates.
+31 CHC independent checks plus six CR2/reference checks.
+All 234 numerical checks passed their recorded tolerances.
+All 11 frozen manuscript benchmark comparisons passed.
+CSV files in results/ contain individual errors, tolerances, and benchmark results.
+
+PRESERVATION OF THE WORKING RESULTS
+33 independent comparisons passed at numerical tolerance 1e-12 or stricter:
+- All baseline raw draws, diagnostics, and summaries.
+- All few-treated raw draws, diagnostics, and summaries.
+- Complete saved CHC replay, CR2 references, and reporting inputs.
+- All 20 CHC result CSV files.
+- Both storage-count CSV files.
+Formatting preserved R syntax trees and the C++ token stream. Estimation formulas,
+random-number generation, and arrival orders were retained. Subsequent additions
+were the few-treated validation calls and portable path/fingerprint handling.
+The manuscript source and both original input files were preserved unchanged.
+
+TABLES AND FIGURES
+All numerical table cells match Tables 1-3 in main8.tex.
+The complete Table 2 text and Notes match, including the Panel A definition and
+the removal of the paired-Monte-Carlo-SE sentence from the manuscript table.
+All three regenerated figures have identical rendered pixels to the validated
+working figures at twice PDF resolution. Visual inspection found no clipping,
+overlapping labels, or missing glyphs.
+Output filenames use the current manuscript figure order.
+
+PORTABILITY AND REPORTING
+The package was copied to a different working directory and a path with spaces.
+The serial quick run passed all 44 baseline and 153 few-treated checks.
+Its raw draws and summaries were R-identical to the parallel quick run.
+The final ZIP was checked for archive integrity and all delivered-file hashes.
+After extraction elsewhere, --report-only regenerated all tables and figures
+and passed all 11 manuscript benchmarks. No original working folders were read.
+The tested installation supplied dependencies through an external R library;
+the package itself does not depend on that library location.
+README.md lists the packages to install on another computer.
+Windows execution has not been tested.
+
+DATA AND SOURCE TRACKING
+Both aer_data.dta and original_readme.pdf match the original working inputs.
+The application checks the source DTA's SHA-256 before each full run.
+Data attribution and provenance are in data/SOURCE_AND_INTEGRITY.md.
+The original materials retain their source rights and terms.
+FILE_MANIFEST_SHA256.txt covers the delivered files except the manifest itself.
+
+SCOPE
+This verifies numerical reproduction and package organization. It does not
+certify compliance with every journal submission rule. The original working
+analyses and detailed build/verification logs remain outside the delivery.

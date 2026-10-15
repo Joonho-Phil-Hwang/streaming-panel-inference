@@ -1,0 +1,4 @@
+list(repetitions = 2000L, N = 100L, G = c(4L, 8L, 16L), T = 6L, 
+    p = 9L, N0 = 20L, treated_initial = 2L, tau = 0, critical_value = 1.96, 
+    seed_rule = "4999 + replication", RNG = c("Mersenne-Twister", 
+    "Inversion", "Rejection"), workers = 4L, elapsed_seconds = c(elapsed = 87.974))

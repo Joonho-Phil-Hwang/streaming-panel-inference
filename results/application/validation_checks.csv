@@ -1,0 +1,32 @@
+check,error,tolerance
+non-nested absorbed effects CR2 vs full-dummy clubSandwich,0.0000000000000000555111512312578,0.000000001
+non-nested FE coefficient vs full lm,0.000000000000000388578058618805,0.000000001
+singleton coordinate Moore-Penrose vs clubSandwich,0.0000000000000000693889390390723,0.0000000001
+singleton test actually uses zero eigenvalue,0,0
+no singleton treatment cohort,0,0
+all 196 coordinates refreshed for each order,0,0
+one independent-support refresh for every coordinate and order,0,0
+48 literal second-calendar refreshes,0,0
+all second-support refreshes nonsingular,0,0
+completed-year correction nonsingular,0,0
+ordinary arrival correction nonsingular,0,0
+updated coefficients vs annual batch,0.0000000000142676981340628,0.00000001
+updated CR0 vs annual batch,0.000000000000239751642946803,0.0000000001
+recursive corrected ledger vs direct score cross-product,0.00000000000000135087194957521,0.0000000001
+exact CR2 invariant to order,0.00000000000018560771087359,0.0000000001
+ascending corrected meat PSD,0.0000000000000000296340311907525,0.000000000001
+descending corrected meat PSD,0.0000000000000000325119020803679,0.000000000001
+ascending initial corrected scores,0.00000000000318323145620525,0.00000001
+ascending 1965 all stored scores: scalar Gamma vs block kernel,0.00000000000000332011660977684,0.000000001
+ascending 1965 corrected meat: scalar Gamma vs block kernel,0.00000000000000394887023225592,0.000000001
+ascending 1966 all stored scores: scalar Gamma vs block kernel,0.00000000000000657754591491076,0.000000001
+ascending 1966 corrected meat: scalar Gamma vs block kernel,0.00000000000000341192404878399,0.000000001
+ascending 1967 all stored scores: scalar Gamma vs block kernel,0.00000000000000594894140641856,0.000000001
+ascending 1967 corrected meat: scalar Gamma vs block kernel,0.00000000000000475088191957871,0.000000001
+descending initial corrected scores,0.00000000000318323145620525,0.00000001
+descending 1965 all stored scores: scalar Gamma vs block kernel,0.0000000000000559439648747399,0.000000001
+descending 1965 corrected meat: scalar Gamma vs block kernel,0.0000000000000058573559054653,0.000000001
+descending 1966 all stored scores: scalar Gamma vs block kernel,0.0000000000000029927833912844,0.000000001
+descending 1966 corrected meat: scalar Gamma vs block kernel,0.00000000000000385993663476648,0.000000001
+descending 1967 all stored scores: scalar Gamma vs block kernel,0.00000000000000392308568423279,0.000000001
+descending 1967 corrected meat: scalar Gamma vs block kernel,0.00000000000000453558749893049,0.000000001

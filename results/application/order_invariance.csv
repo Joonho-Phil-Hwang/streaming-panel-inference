@@ -1,0 +1,3 @@
+order,max_abs_theta_difference,relative_exact_vcov_difference,relative_approx_vcov_difference
+ascending,0,0,0
+descending,0.0000000000131876731757075,0.000000000000225215831050423,0.0607505072992195

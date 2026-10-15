@@ -1,0 +1,5 @@
+specification,window,estimate,standard_error_cr0,ci_low_cr0,ci_high_cr0,published_estimate,absolute_published_difference
+Pooled event-time model (Bailey--Goodman-Bacon R replication),-6--2,-1.97377363808703,7.93012539528125,-17.5168194128383,13.5692721366642,-1.974,0.000226361912971429
+Pooled event-time model (Bailey--Goodman-Bacon R replication),0--4,-41.0980404908181,9.47320548349936,-59.6655232384769,-22.5305577431594,-41.1,0.00195950918187293
+Pooled event-time model (Bailey--Goodman-Bacon R replication),5--9,-71.9591055168429,14.656985107764,-100.68679632806,-43.2314147056254,-71.96,0.000894483157111381
+Pooled event-time model (Bailey--Goodman-Bacon R replication),10--14,-64.0802288379868,19.093035666469,-101.502578744266,-26.6578789317076,-64.08,0.000228837986810504

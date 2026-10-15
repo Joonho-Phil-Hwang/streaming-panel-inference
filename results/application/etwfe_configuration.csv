@@ -1,0 +1,2 @@
+etwfe_version,fixest_version,cgroup,gref,tref,individual_effect,time_effect,weight,cluster,K_adjustment,G_adjustment,eigenvalue_repair,observations,counties,treatment_cells,contrasts
+0.6.0,0.13.2,notyet,0,1959,fips,year,normalized popwt_eld,fips,FALSE,FALSE,FALSE,76230,2541,172,18

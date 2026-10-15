@@ -1,0 +1,6 @@
+list(stage = "all", report_only = FALSE, quick = FALSE, repetitions = 2000L, 
+    workers = 4L, elapsed_seconds = 412.011, R_version = "R version 4.5.2 (2025-10-31)", 
+    platform = "aarch64-apple-darwin20", source_md5 = c(replicate.R = "0782c4314f61a24c406ae826f9b0d90a", 
+    `code/simulation.R` = "b85b030867b47455ddf80b9b7e93471f", 
+    `code/application.R` = "1ad35b3637ccf72ab8ccef9cea4dccea", 
+    `code/numerics.cpp` = "19bd254f295119d9d5af5bfd65b8291f"))

@@ -1,0 +1,29 @@
+\begin{table}[H]
+\centering
+\caption{Variance estimation and coverage with few treated clusters}
+\label{tab:few-treated}
+\small\setstretch{1.0}
+\setlength{\tabcolsep}{9pt}
+\begin{tabular}{@{}lrrrr@{}}
+\toprule
+Treated units, $G$ & CR0 & CR2 & Corrected & Uncorrected\\
+\midrule
+\multicolumn{5}{l}{\textit{Panel A. Average estimated variance / empirical variance}}\\
+\addlinespace
+4 & 0.759 & 1.009 & 1.001 & 0.599 \\
+8 & 0.869 & 0.993 & 0.990 & 0.715 \\
+16 & 0.954 & 1.019 & 1.012 & 0.837 \\
+\addlinespace[5pt]
+\multicolumn{5}{l}{\textit{Panel B. Coverage of nominal 95 percent intervals (\%)}}\\
+\addlinespace
+4 & 82.25 & 86.85 & 86.35 & 78.10 \\
+8 & 90.70 & 92.45 & 92.10 & 87.55 \\
+16 & 93.40 & 94.20 & 94.10 & 92.25 \\
+\bottomrule
+\end{tabular}
+\par\vspace{4pt}
+\begin{minipage}{0.96\textwidth}
+\footnotesize\setstretch{1.0}\raggedright
+\textit{Notes:} $N=100$, $\tau=0$, and 2,000 replications per $G$. Panel A reports $\overline{\widehat V}/s_{\widehat\tau}^2$, where $\overline{\widehat V}$ is the mean estimated variance of $\widehat\tau$ across replications and $s_{\widehat\tau}^2$ is the sample variance of the 2,000 treatment-effect estimates. Values below (above) one indicate underestimation (overestimation) of the empirical sampling variance. Exact CR0/CR2 re-evaluate all final-sample scores; corrected/uncorrected use stored scores with/without $\b\Gamma_i$. Intervals use the same coefficient and critical value $1.96$, with no scalar degrees-of-freedom adjustment.
+\end{minipage}
+\end{table}
